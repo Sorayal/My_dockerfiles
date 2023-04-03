@@ -1,0 +1,6 @@
+# Tag webpagedemo
+docker build -t webpagedemo .
+
+# docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
+# docker run options portforwarding to expose container and name, image based on tag name which is created from build
+docker run -p 80:80 --name webdemo webpagedemo
